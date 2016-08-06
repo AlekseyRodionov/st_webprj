@@ -13,5 +13,3 @@ sudo apt-get install gunicorn
 git clone https://github.com/AlekseyRodionov/st_webprj.git /home/box/web
 
 bash /home/box/web/init.sh
-
-

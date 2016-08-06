@@ -1,12 +1,11 @@
-def app(env, start_response):
-
-
-	data = env['QUERY_STRING']
-
-	s = data.split('&')
-	print s
-	start_response("200 OK", [
-	("Content-Type", "text/plain"),
-	("Content-Length", str(len(data)))
-	])
-	return '\n'.join(s)
+CONFIG = {
+    'mode': 'wsgi',
+    'working_dir': '/home/box/web',
+    'python': '/usr/bin/python',
+    'args': (
+        '--bind=0.0.0.0:8080',
+        '--workers=16',
+        '--timeout=60',
+        'hello',
+    ),
+}

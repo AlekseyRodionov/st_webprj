@@ -16,3 +16,9 @@ echo "_________________________________"
 echo " "
 echo "Update/Upgrade/Insatall gunicorn"
 sudo apt-get install gunicorn
+
+echo " "
+echo "_________________________________"
+echo " "
+echo "Clone git repo"
+git clone https://github.com/AlekseyRodionov/st_webprj.git /home/box/web

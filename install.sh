@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "Update/Upgrade/ pack"
+echo "Update/Upgrade/Install Nginx and gunicorn"
 
-sudo apt-get update
-sudo apt-get upgrade
+#sudo apt-get update
+#sudo apt-get upgrade
 
 echo " "
 echo "_________________________________"
@@ -17,4 +17,3 @@ echo " "
 echo "Update/Upgrade/Insatall gunicorn"
 sudo apt-get install gunicorn
 
-#

@@ -4,6 +4,11 @@
 # clone git repo
 git clone https://github.com/AlekseyRodionov/st_webprj.git /home/box/web
 
+# start mysql server
+sudo /etc/init.d/mysql start
+
+#setup database
+bash /home/box/web/database.sh
 
 #install nginx and gunicorn
 bash /home/box/web/install.sh

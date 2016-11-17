@@ -27,7 +27,7 @@ sudo ln -sf /home/box/web/etc/gunicorn_config.py /etc/gunicorn.d/gunicorn_config
 
 
 gunicorn -c /etc/gunicorn.d/hello.py hello:app --daemon
-cd ask
+cd /home/box/web/ask/
 gunicorn -c /etc/gunicorn.d/gunicorn_config.py ask.wsgi --daemon
 
 #sudo /etc/init.d/gunicorn restart
